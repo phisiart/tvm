@@ -148,7 +148,7 @@ class CodeGenC :
   std::string GetStructRef(
       Type t, const Expr& buffer, const Expr& index, int kind);
   // print reference to a buffer as type t in index.
-  std::string GetBufferRef(
+  virtual std::string GetBufferRef(
       Type t, const Variable* buffer, Expr index);
   // Get a cast type from to
   std::string CastFromTo(std::string value, Type from, Type target);
