@@ -19,5 +19,5 @@ TVM_FFI=cython python -m nose -v tests/python/contrib || exit -1
 TVM_FFI=ctypes python3 -m nose -v tests/python/contrib || exit -1
 
 # Do not enabke OpenGL
-# TVM_FFI=cython python -m nose -v tests/webgl || exit -1
-# TVM_FFI=ctypes python3 -m nose -v tests/webgl || exit -1
+TVM_FFI=cython python -m nose -v tests/webgl || exit -1
+TVM_FFI=ctypes python3 -m nose -v tests/webgl || exit -1
